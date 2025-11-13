@@ -63,8 +63,8 @@ class effectors {
             const rayLength = 180;
             for (let i = 0; i < rayCount; i++) {
                 const angle = (2 * Math.PI * i) / rayCount;
-                const x = Math.cos(angle) * 80;
-                const z = Math.sin(angle) * 80;
+                const x = Math.cos(angle) * 120;
+                const z = Math.sin(angle) * 120;
                 p5.line(0, 0, 0, x, rayLength, z);
             }
             p5.pop();
