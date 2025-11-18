@@ -60,7 +60,7 @@ class effectors {
             p5.stroke(255, 255, 180, 90);
             p5.strokeWeight(2.5);
             const rayCount = 32;
-            const rayLength = 180;
+            const rayLength = 360;
             for (let i = 0; i < rayCount; i++) {
                 const angle = (2 * Math.PI * i) / rayCount;
                 const x = Math.cos(angle) * 120;
@@ -81,7 +81,7 @@ class effectors {
             // Heater body
             p5.noStroke();
             p5.ambientMaterial(180, 60, 40);
-            p5.box(40, 60, 40);
+            p5.box(80, 60, 40);
 
             // Heater grill
             p5.push();
