@@ -73,15 +73,15 @@ class cloud {
         this.boundaryFade = 1;
 
         // Colour handling
-        this.currentColor = { r: 255, g: 255, b: 255, a: 200 }; // starting color
+        this.currentColor = { r: 255, g: 255, b: 255, a: 100 }; // starting color
         this.targetColor = this.getTargetColor(weatherState);
     }
 
     getTargetColor(state: string) {
-        if (state === "rainy") return { r: 80, g: 80, b: 80, a: 220 };
-        if (state === "storm") return { r: 50, g: 50, b: 50, a: 230 };
-        if (state === "flood") return { r: 70, g: 70, b: 90, a: 230 };
-        return { r: 255, g: 255, b: 255, a: 200 }; // sunny/clear base
+        if (state === "rainy") return { r: 80, g: 80, b: 80, a: 110 };
+        if (state === "storm") return { r: 50, g: 50, b: 50, a: 115 };
+        if (state === "flood") return { r: 70, g: 70, b: 90, a: 115 };
+        return { r: 255, g: 255, b: 255, a: 100 }; // sunny/clear base
     }
 
     update(p5: p5, newState: string) {
